@@ -107,3 +107,9 @@ nav a {
   color: #fff;
   cursor: pointer;
 }
+
+.category-buttons button.active {
+  background-color: #f0f;
+  color: #000;
+  font-weight: bold;
+}
