@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pov_of_vamsi | Travel Photography</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>pov_of_vamsi</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="category-buttons">
+    <button data-category="all">All</button>
+    <button data-category="travel">Travel</button>
+    <button data-category="street">Street</button>
+    <button data-category="portraits">Portraits</button>
+    <button data-category="nature">Nature</button>
+    <button data-category="sunsets">Sunsets</button>
+    <button data-category="cityscapes">Cityscapes</button>
+    <button data-category="cultural">Cultural</button>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="image-wrapper" data-category="travel">
+      <img src="assets/images/travel/1.jpg" alt="Paris, France">
+      <div class="caption">Paris, France</div>
+    </div>
+    <div class="image-wrapper" data-category="street">
+      <img src="assets/images/street/1.jpg" alt="Hyderabad, India">
+      <div class="caption">Hyderabad, India</div>
+    </div>
+    <div class="image-wrapper" data-category="nature">
+      <img src="assets/images/nature/1.jpg" alt="Lake District, UK">
+      <div class="caption">Lake District, UK</div>
+    </div>
+    <div class="image-wrapper" data-category="portraits">
+      <img src="assets/images/portraits/1.jpg" alt="Jaipur, India">
+      <div class="caption">Jaipur, India</div>
+    </div>
+    <div class="image-wrapper" data-category="sunsets">
+      <img src="assets/images/sunsets/1.jpg" alt="Santorini, Greece">
+      <div class="caption">Santorini, Greece</div>
+    </div>
+    <div class="image-wrapper" data-category="cityscapes">
+      <img src="assets/images/cityscapes/1.jpg" alt="New York, USA">
+      <div class="caption">New York, USA</div>
+    </div>
+    <div class="image-wrapper" data-category="cultural">
+      <img src="assets/images/cultural/1.jpg" alt="Varanasi, India">
+      <div class="caption">Varanasi, India</div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <img id="lightbox-img" alt="Full View">
+    <span class="close">&times;</span>
+  </div>
+
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
