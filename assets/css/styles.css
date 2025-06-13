@@ -116,3 +116,6 @@ nav a {
   color: #f0f;
   text-decoration: underline;
 }
+body.lightbox-open {
+  overflow: hidden;
+}
