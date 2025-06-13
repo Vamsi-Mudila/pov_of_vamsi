@@ -22,8 +22,11 @@ document.querySelectorAll(".image-wrapper img").forEach(img => {
 });
 document.querySelector(".close").addEventListener("click", () => {
   lightbox.style.display = "none";
+  document.body.classList.remove("lightbox-open");
 });
 lightbox.addEventListener("click", e => {
-  if (e.target === lightbox) lightbox.style.display = "none";
-  document.body.classList.remove("lightbox-open");
+  if (e.target === lightbox) {
+    lightbox.style.display = "none";
+    document.body.classList.remove("lightbox-open");
+  }
 });
