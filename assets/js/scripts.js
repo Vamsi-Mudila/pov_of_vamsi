@@ -15,6 +15,7 @@ const lightboxImg = document.getElementById("lightbox-img");
 document.querySelectorAll(".image-wrapper img").forEach(img => {
   img.addEventListener("click", () => {
     lightbox.style.display = "flex";
+    document.body.classList.add("lightbox-open");
     lightboxImg.src = img.src;
     lightboxImg.alt = img.alt;
   });
@@ -24,4 +25,5 @@ document.querySelector(".close").addEventListener("click", () => {
 });
 lightbox.addEventListener("click", e => {
   if (e.target === lightbox) lightbox.style.display = "none";
+  document.body.classList.remove("lightbox-open");
 });
