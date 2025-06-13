@@ -1,45 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>pov_of_vamsi | Travel Photography</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/styles.css"/>
 </head>
 <body>
-  <header>
+  <header id="home">
     <h1>pov_of_vamsi</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-<section class="category-buttons">
-  <button data-category="all">All</button>
-  <button data-category="landscapes">Landscapes</button>
-  <button data-category="citylife">City Life</button>
-  <button data-category="streets">Street Moments</button>
-  <button data-category="portraits">Portraits</button>
-  <button data-category="sunsets">Golden Hour</button>
-  <button data-category="nature">Nature & Details</button>
-  <button data-category="reflections">Reflections</button>
-  <button data-category="architecture">Architecture</button>
-  <button data-category="travelstories">Travel Stories</button>
-</section>
+  <section class="category-buttons">
+    <button data-category="all" class="active">All</button>
+    <button data-category="landscapes">Landscapes</button>
+    <button data-category="citylife">City Life</button>
+    <button data-category="streets">Street Moments</button>
+    <button data-category="portraits">Portraits</button>
+    <button data-category="sunsets">Golden Hour</button>
+    <button data-category="nature">Nature & Details</button>
+    <button data-category="reflections">Reflections</button>
+    <button data-category="architecture">Architecture</button>
+    <button data-category="travelstories">Travel Stories</button>
+  </section>
 
   <section class="gallery" id="gallery">
-    <div class="image-wrapper" data-category="travelstories">
-      <img src="assets/images/travel/1.jpg" alt="Paris, France">
-      <div class="caption">Paris, France</div>
+    <div class="image-wrapper" data-category="landscapes">
+      <img src="assets/images/landscapes/1.jpg" alt="Alps, Switzerland"/>
+      <div class="caption">Alps, Switzerland</div>
+    </div>
+    <div class="image-wrapper" data-category="citylife">
+      <img src="assets/images/citylife/1.jpg" alt="Tokyo, Japan"/>
+      <div class="caption">Tokyo, Japan</div>
     </div>
   </section>
 
-  <div class="lightbox" id="lightbox">
-    <img id="lightbox-img" alt="Full View">
+  <section class="lightbox" id="lightbox">
+    <img id="lightbox-img" alt="Full View" />
     <span class="close">&times;</span>
-  </div>
+  </section>
+
+  <section id="about" class="text-section">
+    <h2>About Me</h2>
+    <p>Hello! I'm Vamsi, a travel photographer capturing stories from cities, cultures, and coastlines around the world.</p>
+    <p>Follow me on <a href="https://instagram.com/pov_of_vamsi" target="_blank">@pov_of_vamsi</a></p>
+  </section>
+
+  <section id="contact" class="text-section">
+    <h2>Contact</h2>
+    <p>Email me at <a href="mailto:vamsi.mudila@gmail.com">vamsi.mudila@gmail.com</a></p>
+  </section>
 
   <script src="assets/js/scripts.js"></script>
 </body>
