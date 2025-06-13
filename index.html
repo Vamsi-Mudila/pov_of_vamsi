@@ -3,67 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>pov_of_vamsi | Travel Photography</title>
+  <title>pov_of_vamsi</title>
   <link rel="stylesheet" href="assets/css/styles.css"/>
 </head>
 <body>
-  <header id="home">
-    <h1>pov_of_vamsi</h1>
+  <header>
+    <div class="logo">pov_of_vamsi</div>
     <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#">Overview</a>
+      <a href="#">People</a>
+      <a href="#">Things</a>
+      <a href="#">Contact</a>
     </nav>
   </header>
 
-  <section class="category-buttons">
-    <button data-category="all" class="active">All</button>
-    <button data-category="landscapes">Landscapes</button>
-    <button data-category="citylife">City Life</button>
-    <button data-category="streetlife">Street Life</button>
-    <button data-category="portraits">Portraits</button>
-    <button data-category="goldenhour">Golden Hour</button>
-    <button data-category="nature">Nature</button>
-    <button data-category="details">Details</button>
-    <button data-category="reflections">Reflections</button>
-    <button data-category="architecture">Architecture</button>
-    <button data-category="travelstories">Travel Stories</button>
+  <section class="filters">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="people">People</button>
+    <button class="filter-btn" data-category="things">Things</button>
+    <button class="filter-btn" data-category="places">Places</button>
   </section>
 
-  <section class="gallery" id="gallery">
-    <div class="image-wrapper" data-category="architecture">
-      <img src="assets/images/architecture/liverpool-cathedral-road.jpg" alt="View of Liverpool Cathedral and street">
-      <div class="caption">Liverpool Cathedral from the road</div>
-    </div>
-    <div class="image-wrapper" data-category="citylife">
-      <img src="assets/images/citylife/sunset-traffic-liverpool.jpg" alt="City traffic and sunset glow in Liverpool">
-      <div class="caption">Golden hour traffic, Liverpool</div>
-    </div>
-    <div class="image-wrapper" data-category="nature">
-      <img src="assets/images/nature/spring-path-liverpool.jpg" alt="Cherry blossoms in Liverpool">
-      <div class="caption">Cherry blossoms, Liverpool</div>
-    </div>
-    <div class="image-wrapper" data-category="streetlife">
-      <img src="assets/images/streetlife/rainbow-street.jpg" alt="Rainbow over Liverpool">
-      <div class="caption">Rainbow over Liverpool</div>
-    </div>
-  </section>
+  <main class="masonry" id="gallery">
+    <div class="item" data-category="places"><img src="assets/images/img1.jpg" alt="Sample 1"></div>
+    <div class="item" data-category="people"><img src="assets/images/img2.jpg" alt="Sample 2"></div>
+    <div class="item" data-category="things"><img src="assets/images/img3.jpg" alt="Sample 3"></div>
+    <div class="item" data-category="people"><img src="assets/images/img4.jpg" alt="Sample 4"></div>
+    <div class="item" data-category="places"><img src="assets/images/img5.jpg" alt="Sample 5"></div>
+    <div class="item" data-category="things"><img src="assets/images/img6.jpg" alt="Sample 6"></div>
+  </main>
 
-  <section class="lightbox" id="lightbox">
-    <img id="lightbox-img" alt="Full View" />
+  <div class="lightbox" id="lightbox">
+    <img id="lightbox-img" alt="Full View">
     <span class="close">&times;</span>
-  </section>
-
-  <section id="about" class="text-section">
-    <h2>About Me</h2>
-    <p>Hello! I'm Vamsi, a travel photographer capturing stories from cities, cultures, and coastlines around the world.</p>
-    <p>Follow me on <a href="https://instagram.com/pov_of_vamsi" target="_blank">@pov_of_vamsi</a></p>
-  </section>
-
-  <section id="contact" class="text-section">
-    <h2>Contact</h2>
-    <p>Email me at <a href="mailto:vamsi.mudila@gmail.com">vamsi.mudila@gmail.com</a></p>
-  </section>
+  </div>
 
   <script src="assets/js/scripts.js"></script>
 </body>
