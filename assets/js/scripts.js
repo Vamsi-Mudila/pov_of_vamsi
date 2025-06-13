@@ -1,32 +1,36 @@
-const buttons = document.querySelectorAll(".category-buttons button");
-const images = document.querySelectorAll(".image-wrapper");
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    const category = button.dataset.category;
-    images.forEach(image => {
-      image.style.display = (category === "all" || image.dataset.category === category) ? "block" : "none";
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+const items = document.querySelectorAll(".item");
+
+filterButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const category = btn.getAttribute("data-category");
+    filterButtons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    items.forEach(item => {
+      item.style.display = category === "all" || item.dataset.category === category ? "block" : "none";
     });
-    buttons.forEach(btn => btn.classList.remove("active"));
-    button.classList.add("active");
   });
 });
+
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
-document.querySelectorAll(".image-wrapper img").forEach(img => {
+const galleryImgs = document.querySelectorAll(".item img");
+
+galleryImgs.forEach(img => {
   img.addEventListener("click", () => {
     lightbox.style.display = "flex";
-    document.body.classList.add("lightbox-open");
     lightboxImg.src = img.src;
     lightboxImg.alt = img.alt;
   });
 });
+
 document.querySelector(".close").addEventListener("click", () => {
   lightbox.style.display = "none";
-  document.body.classList.remove("lightbox-open");
 });
-lightbox.addEventListener("click", e => {
+lightbox.addEventListener("click", (e) => {
   if (e.target === lightbox) {
     lightbox.style.display = "none";
-    document.body.classList.remove("lightbox-open");
   }
 });
