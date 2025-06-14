@@ -58,6 +58,7 @@ body {
 .about-section {
   margin-top: 0;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .about-wrapper {
   display: flex;
