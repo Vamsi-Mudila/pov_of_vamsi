@@ -182,3 +182,49 @@ footer .copyright {
   .hero-text h1 { font-size: 1.6rem; }
   .hero-text p { font-size: 1rem; }
 }
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.top-nav .logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.top-nav nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.top-nav nav a:hover {
+  color: #f0f;
+}
+
+@media (max-width: 600px) {
+  .top-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .top-nav nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .top-nav nav a {
+    margin: 5px 10px 0 0;
+  }
+}
