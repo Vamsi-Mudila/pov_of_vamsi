@@ -55,6 +55,10 @@ body {
   margin: auto;
   text-align: center;
 }
+.about-section {
+  margin-top: 0;
+  padding-top: 2rem;
+}
 .about-wrapper {
   display: flex;
   flex-direction: column;
