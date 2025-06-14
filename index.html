@@ -3,24 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>pov_of_vamsi | VAMSI MUDILA</title>
+  <title>pov_of_vamsi | Vamsi Mudila</title>
   <link rel="stylesheet" href="assets/css/styles.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <div class="logo">pov_of_vamsi</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a href="https://instagram.com/pov_of_vamsi" target="_blank"><i class="fab fa-instagram"></i></a>
-    </nav>
+
+  <header class="hero">
+    <img src="assets/images/hero.jpg" alt="Hero image - fountain with castle" class="hero-img">
+    <div class="hero-text">
+      <h1>Shot on mobile. Felt in the moment.</h1>
+      <p>Stories through the lens of an S24 Ultra.</p>
+    </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Through my lens — stories from cities, sunsets, and silent moments.</h1>
-      <p>Hi, I’m Vamsi. I’m exploring the world through travel photography — one frame at a time.</p>
+  <section id="about" class="about-section">
+    <div class="about-wrapper">
+      <img src="assets/images/vamsi-profile.jpg" alt="Vamsi Mudila Portrait" class="about-img">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I'm Vamsi — a mobile photographer capturing fleeting stories through the lens of my S24 Ultra.</p>
+        <p>I began this journey just a few months ago, driven by instinct more than technique. What started as casual clicks on daily walks soon became a quiet obsession — chasing light, symmetry, mood, and meaning.</p>
+        <p>My photos aren't staged. They're seen, felt, and gently frozen in time. This is my point of view — real, raw, and handheld.</p>
+      </div>
     </div>
   </section>
 
@@ -28,12 +33,9 @@
     <button class="filter-btn active" data-category="all">All</button>
     <button class="filter-btn" data-category="landscapes">Landscapes</button>
     <button class="filter-btn" data-category="goldenhour">Golden Hour</button>
-    <button class="filter-btn" data-category="nature">Nature</button>
-    <button class="filter-btn" data-category="citylife">City Life</button>
     <button class="filter-btn" data-category="streetlife">Street Life</button>
+    <button class="filter-btn" data-category="citylife">City Life</button>
     <button class="filter-btn" data-category="architecture">Architecture</button>
-    <button class="filter-btn" data-category="portraits">Portraits</button>
-    <button class="filter-btn" data-category="travelstories">Travel Stories</button>
     <button class="filter-btn" data-category="reflections">Reflections</button>
     <button class="filter-btn" data-category="details">Details</button>
   </section>
@@ -118,21 +120,11 @@
     <span class="close">&times;</span>
   </div>
 
-  <section id="about" class="about-section">
-    <div class="about-wrapper">
-      <img src="assets/images/vamsi-profile.jpg" alt="Vamsi Mudila Portrait" class="about-img">
-      <div class="about-text">
-        <h2>About Me</h2>
-        <p>I’m a beginner photographer based in the UK, capturing the world with fresh eyes. What started as weekend walks with my camera has grown into a daily habit of noticing the unnoticed.</p>
-        <p>My work is about light, silence, and place — seen through curiosity.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact-section">
-    <h2>Contact</h2>
-    <p>You can reach me at <a href="mailto:vamsi.mudila@gmail.com">vamsi.mudila@gmail.com</a></p>
-  </section>
+  <footer>
+    <p>📧 Say hello at <a href="mailto:vamsiphotography@gmail.com">vamsiphotography@gmail.com</a></p>
+    <p>📷 Follow my mobile photography journey: <a href="https://instagram.com/pov_of_vamsi" target="_blank">@pov_of_vamsi</a></p>
+    <p class="copyright">© 2025 Vamsi Mudila · Shot entirely on Samsung S24 Ultra</p>
+  </footer>
 
   <script src="assets/js/scripts.js"></script>
 </body>
