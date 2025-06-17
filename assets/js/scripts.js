@@ -34,8 +34,3 @@ lightbox.addEventListener("click", (e) => {
     lightbox.style.display = "none";
   }
 });
-<script>
-  document.addEventListener("contextmenu", function (e) {
-    e.preventDefault();
-  });
-</script>
