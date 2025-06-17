@@ -15,7 +15,6 @@ filterButtons.forEach(btn => {
 
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
-// const lightboxCaption = document.getElementById("lightbox-caption");
 const galleryImgs = document.querySelectorAll(".item img");
 const closeBtn = document.querySelector(".close");
 const prevBtn = document.getElementById("prev");
@@ -42,7 +41,6 @@ galleryImgs.forEach(img => {
 
 function showImage(index) {
   lightboxImg.src = currentGroup[index];
-  lightboxCaption.textContent = currentCaptions[index] || "";
 }
 
 // Navigation
