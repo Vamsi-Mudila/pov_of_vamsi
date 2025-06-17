@@ -15,7 +15,7 @@ filterButtons.forEach(btn => {
 
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
-const lightboxCaption = document.getElementById("lightbox-caption");
+// const lightboxCaption = document.getElementById("lightbox-caption");
 const galleryImgs = document.querySelectorAll(".item img");
 const closeBtn = document.querySelector(".close");
 const prevBtn = document.getElementById("prev");
