@@ -7,6 +7,9 @@
   <link rel="icon" type="image/jpeg" href="assets/images/favicon.jpeg" />
   <link rel="stylesheet" href="assets/css/styles.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -55,6 +58,7 @@
 </section> 
   
 <main class="masonry" id="gallery">
+  
   <div class="item" data-category="streetlife">
   <img src="assets/images/streetlife/wet-cobbles-under-tree-leeds.jpg" alt="Cobbled street lined with houses and a towering green tree in Leeds after rain">
   <div class="caption">Rain had just left — the street still whispering, and the tree standing like it’s always known your name.</div>
@@ -95,10 +99,20 @@
     <img src="assets/images/streetlife/liverpool-evening-clouds-streetlife.jpg" alt="Evening view of a narrow street in Liverpool with dramatic swirling clouds in the sky">
     <div class="caption">A street under a storm-painted sky — stillness before the unraveling.</div>
   </div>
-  <div class="item" data-category="goldenhour">
-    <img src="assets/images/goldenhour/another-place-sunset-statue.jpg" alt="Silhouette of Antony Gormley's iron statue at Crosby Beach during a golden sunset with dramatic storm clouds overhead.">
-    <div class="caption">He stood in molten silence — dusk folding around a steel prayer.</div>
-  </div>
+  
+<a href="assets/images/goldenhour/another-place-sunset-statue.jpg" data-lightbox="gormley-series" data-title="He stood in molten silence — dusk folding around a steel prayer.">
+  <img src="assets/images/goldenhour/another-place-sunset-statue.jpg" alt="Main view of Gormley statue at sunset">
+</a>
+
+<a href="assets/images/goldenhour/another-place-sunset-statue-close.jpg" data-lightbox="gormley-series" data-title="A rusted gaze lost in the tide — as if the wind once whispered his name and he never stopped listening." style="display: none;">
+  <img src="assets/images/goldenhour/another-place-sunset-statue-close.jpg" alt="Close-up of statue">
+</a>
+
+<a href="assets/images/goldenhour/another-place-sunset-frame.jpg" data-lightbox="gormley-series" data-title="Framed in iron stillness, the horizon exhaled gold — a quiet witness, watching light become memory." style="display: none;">
+  <img src="assets/images/goldenhour/another-place-sunset-frame.jpg" alt="Statue framed with golden hour sky">
+</a>
+
+  
   <div class="item" data-category="nature">
     <img src="assets/images/nature/swan-crosby-marine-lake.jpg" alt="Swan gliding on Crosby Marine Lake with suburban houses in the background">
     <div class="caption">A lone swan drifts where sky meets water — unbothered, unhurried.</div>
@@ -198,5 +212,7 @@
   <p class="copyright" style="text-align: center;">© 2025 Vamsi Mudila. All images are protected under copyright. Unauthorized use is strictly prohibited.</p>
 
   <script src="assets/js/scripts.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
 </body>
 </html>
