@@ -36,6 +36,15 @@ galleryImgs.forEach(img => {
 
     showImage(currentIndex);
     lightbox.style.display = "flex";
+
+    // Show arrows only if more than one image in the group
+    if (currentGroup.length > 1) {
+      prevBtn.style.display = "block";
+      nextBtn.style.display = "block";
+    } else {
+      prevBtn.style.display = "none";
+      nextBtn.style.display = "none";
+    }
   });
 });
 
